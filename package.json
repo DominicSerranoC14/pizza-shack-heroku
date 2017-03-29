@@ -2,6 +2,9 @@
   "name": "pizza-shack-joeshep",
   "version": "1.0.0",
   "description": "A Node.js app with pug templates and postgreSQL",
+  "engines": {
+    "node": "7"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
