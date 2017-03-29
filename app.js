@@ -9,7 +9,7 @@ const app = express();
 app.set('port', (process.env.PORT || 3000));
 app.set('view engine', 'pug');
 // Middleswares
-app.use(express.static(__dirname + 'public'));
+app.use(express.static('public'));
 
 
 app.get('/', (req, res) => {
