@@ -1,5 +1,5 @@
 {
-  "name": "pizza-shack-joeshep",
+  "name": "pizza-shack",
   "version": "1.0.0",
   "description": "A Node.js app with pug templates and postgreSQL",
   "engines": {
@@ -12,16 +12,6 @@
     "deploy": "git push heroku master",
     "postinstall": "bower install"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nss-day-cohort-17/pizza-shack-joeshep.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nss-day-cohort-17/pizza-shack-joeshep/issues"
-  },
-  "homepage": "https://github.com/nss-day-cohort-17/pizza-shack-joeshep#readme",
   "devDependencies": {
     "bower": "^1.7.9"
   },
