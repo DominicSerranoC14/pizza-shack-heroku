@@ -2,10 +2,14 @@
 
 const { Router } = require('express');
 const router = Router();
-const root = require('./root.js');
+
 
 // Public routes
-router.use(root);
+router.use(require('./root.js'));
+router.use(require('./login.js'));
+router.use(require('./register.js'));
+router.use(require('./contact'));
+
 
 // Authorization middleware
 router.use((req, res, next) => {
@@ -16,6 +20,8 @@ router.use((req, res, next) => {
   // }
 });
 
+
 // Private routes
+
 
 module.exports = router;

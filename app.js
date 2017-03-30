@@ -5,29 +5,17 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 
+
 // Express config
 app.set('port', (process.env.PORT || 3000));
 app.set('view engine', 'pug');
 // Middleswares
 app.use(express.static('public'));
 
+// Routes
+app.use(require('./routes/'));
 
-app.get('/', (req, res) => {
-  res.render('index');
-});
-
-app.get('/login', (req, res) => {
-  res.render('login');
-});
-
-app.get('/register', (req, res) => {
-  res.render('register');
-});
-
-app.get('/contact', (req, res) => {
-  res.render('contact');
-});
-
+// 404 Middleware
 app.use((req, res, next) => {
   res.render('404');
 });

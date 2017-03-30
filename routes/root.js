@@ -2,9 +2,8 @@
 
 const { Router } = require('express');
 const router = Router();
+const { get } = require('../controllers/rootCtrl.js');
 
-router.get('/', (req, res) => {
-  res.render('index');
-});
+router.get('/', get);
 
 module.exports = router;
