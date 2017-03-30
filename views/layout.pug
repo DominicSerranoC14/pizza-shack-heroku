@@ -2,9 +2,16 @@ doctype html
 html
   head
     title Pizza Shack
+    link(rel="icon" href="/images/code-braces.png")
     include partials/styles.pug
 
   body
+
+    .nav-bar
+      a(href="/") Home
+      a(href="/contact") Contact Us
+      a(href="/login") Login
+      a(href="/register") Register
 
     block content
 

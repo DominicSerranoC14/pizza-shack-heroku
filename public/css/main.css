@@ -1,14 +1,27 @@
 body {
-  background: khaki;
-  padding-top: 50px;
+  background: tomato;
+  margin: 0;
+  padding: 0;
 }
 
+/* Index styles */
 .welcome {
   text-align: center;
-  color: red;
+  color: white;
 }
 
 .welcome img {
   height: 275px;
   width: 350px;
+  border: solid 2px white;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  margin: 0 1rem;
+}
+
+.content-text {
+  padding: 2rem;
 }
