@@ -1,0 +1,15 @@
+extends layout.pug
+
+block content
+
+  form.app-form(method="POST")
+
+    h2 Contact Us
+
+    label Name
+    input(type="text" name="name" placeholder="Buzz Aldrin")
+    label Email
+    input(type="text" name="email" placeholder="example@email.com")
+    label Comment
+    textarea(placeholder="All your thoughts here" name="comment" rows="5" cols="25")
+    input(type="submit" value="Submit")
