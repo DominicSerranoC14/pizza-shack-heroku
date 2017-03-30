@@ -7,21 +7,24 @@ body {
 /* Index styles */
 .welcome {
   text-align: center;
+  margin-top: 3rem;
   color: white;
 }
 
 .welcome img {
   height: 275px;
-  width: 350px;
+  width: 500px;
   border: solid 2px white;
 }
 
 .content {
   display: flex;
   flex-direction: row;
-  margin: 0 1rem;
+  margin: 0 2rem;
+  margin-top: 3rem;
 }
 
 .content-text {
   padding: 2rem;
+  font-size: 20px;
 }
