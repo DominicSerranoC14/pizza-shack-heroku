@@ -1,5 +1,7 @@
 body {
   background: tomato;
+  margin: 0;
+  padding: 0;
 }
 
 /* Index styles */
@@ -12,4 +14,14 @@ body {
   height: 275px;
   width: 350px;
   border: solid 2px white;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  margin: 0 1rem;
+}
+
+.content-text {
+  padding: 2rem;
 }
