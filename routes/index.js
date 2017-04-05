@@ -18,10 +18,12 @@ router.use((req, res, next) => {
   // } else {
   //   res.redirect('/login');
   // }
+  next();
 });
 
 
 // Private routes
+router.use(require('./order'));
 
 
 module.exports = router;

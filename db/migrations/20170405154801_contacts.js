@@ -5,8 +5,7 @@ exports.up = (knex, Promise) => (
     table.increments();
     table.string('name').notNullable().unique();
     table.string('email').notNullable();
-    table.string('phone').notNullable();
-    table.string('message').notNullable();
+    table.string('comment').notNullable();
   })
 );
 

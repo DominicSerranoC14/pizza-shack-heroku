@@ -1,0 +1,39 @@
+extends layout.pug
+
+block content
+
+  if detail
+    p=detail
+
+  form.app-form(method="POST")
+
+    h2 Order
+
+    label Customer Name
+    input(type="text" name="name" placeholder="example@email.com")
+    label Email
+    input(type="text" name="email" placeholder="example@email.com")
+
+    h5 Sizes
+
+      each size in sizes
+        label= size.name
+        input(
+          type='checkbox'
+          name='size'
+          value=size.name
+          selected=(body.sizes && body.sizes.includes(size.name))
+        )
+
+    h5 Toppings
+
+      each topping in toppings
+        label= topping.name
+        input(
+          type='checkbox'
+          name='toppings'
+          value=topping.name
+          selected=(body.toppings && body.toppings.includes(topping.name))
+        )
+
+    input(type="submit" value="Submit")
