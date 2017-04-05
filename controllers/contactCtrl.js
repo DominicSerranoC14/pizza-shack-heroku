@@ -8,8 +8,9 @@ const get = (req, res) => {
 };
 
 
-const addContact = ({body}, res, err) =>
+const addContact = ({body}, res, err) => {
   Contact.forge(body).save().then(() => res.redirect('/'));
+};
 
 
 module.exports = { get, addContact };
