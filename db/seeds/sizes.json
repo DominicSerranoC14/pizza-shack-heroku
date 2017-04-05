@@ -1,0 +1,6 @@
+[
+  { "name": "Small", "inches": 8 },
+  { "name": "Medium", "inches": 10 },
+  { "name": "Large", "inches": 12 },
+  { "name": "X-Large", "inches": 14 }
+]

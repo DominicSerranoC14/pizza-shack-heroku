@@ -5,4 +5,8 @@ const config = require('../knexfile.js')[env];
 const knex = require('knex')(config);
 const bookshelf = require('bookshelf')(knex);
 
-bookshelf.plugin('bookshelf-bcrypt');
+
+bookshelf.plugin(require('bookshelf-bcrypt'));
+
+
+module.exports = { knex, bookshelf };

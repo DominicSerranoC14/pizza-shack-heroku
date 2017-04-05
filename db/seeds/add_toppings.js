@@ -1,16 +1,11 @@
 'use strict';
 
-exports.seed = (knex, Promise) => (
-  // Deletes ALL existing entries
-  knex('toppings').del()
-    .then(() => (
-      // Inserts seed entries
-      knex('toppings').insert([
-        {name: 'Pepperoni'},
-        {name: 'Bell Pepper'},
-        {name: 'Onion'},
-        {name: 'Cheese'},
-        {name: 'Sausage'}
-      ])
-    ))
-);
+const sizes = require('./toppings.json');
+
+const toppingPromises = (knex) =>
+  sizes.map(({name}) => knex('toppings').insert({name}));
+
+
+// Deletes ALL existing entries and run the promise.all
+exports.seed = (knex, Promise) =>
+  knex('toppings').del().then(() => Promise.all(toppingPromises(knex)));
