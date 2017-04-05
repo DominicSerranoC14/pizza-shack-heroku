@@ -4,6 +4,7 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
 
 
 // Express config
@@ -11,6 +12,7 @@ app.set('port', (process.env.PORT || 3000));
 app.set('view engine', 'pug');
 // Middleswares
 app.use(express.static('public'));
+app.use(bodyParser.urlencoded({ extended: false}));
 
 
 // Routes
