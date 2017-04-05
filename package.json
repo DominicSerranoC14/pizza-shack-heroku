@@ -13,9 +13,12 @@
     "postinstall": "bower install"
   },
   "dependencies": {
+    "bookshelf": "^0.10.3",
     "bower": "^1.7.9",
     "dotenv": "^4.0.0",
     "express": "^4.15.2",
+    "knex": "^0.12.9",
+    "pg": "^6.1.5",
     "pug": "^2.0.0-beta11"
   }
 }
